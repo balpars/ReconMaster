@@ -5,5 +5,5 @@ __pycache__/
 recon_db.db
 chrome_screenshots/
 logs/
-results/
-gif_gen2.py
+results/*
+!results/.gitkeep
