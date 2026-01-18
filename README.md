@@ -62,10 +62,11 @@ source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 ```
 pip install -r requirements.txt
 ```
+
 This method also requires you to install Go binaries that are used in the project.
 After installing and adding Go to path, you must run this command to install dependecies.
 
-```
+```bash
 go install github.com/incogbyte/shosubgo@latest \
 && go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest \
 && go install github.com/projectdiscovery/katana/cmd/katana@latest \
