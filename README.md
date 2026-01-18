@@ -52,7 +52,7 @@ docker-compose up --build
 ### Manual Installation
 ```bash
 # Clone the repository
-git clone https://github.com/YasinCelik01/ReconMaster.git
+git clone https://github.com/balpars/ReconMaster.git
 
 # Create and activate virtual environment
 python -m venv .venv
