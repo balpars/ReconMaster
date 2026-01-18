@@ -56,17 +56,16 @@ git clone https://github.com/YasinCelik01/ReconMaster.git
 
 # Create and activate virtual environment
 python -m venv .venv
-source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
+source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 # Install dependencies
-```
 pip install -r requirements.txt
 ```
 
 This method also requires you to install Go binaries that are used in the project.
 After installing and adding Go to path, you must run this command to install dependecies.
 
-```bash
+```
 go install github.com/incogbyte/shosubgo@latest \
 && go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest \
 && go install github.com/projectdiscovery/katana/cmd/katana@latest \
