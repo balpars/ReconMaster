@@ -34,10 +34,13 @@ ReconMaster is a comprehensive reconnaissance tool that combines multiple passiv
 
 ### Docker Installation
 
-This is the reccomended and most supported way to run our application.
+This is the recommended and most supported way to run.
 Since docker installs everything for you, it's also the simplest.
 
 ```bash
+# Install docker if not already installed
+sudo apt update && apt install docker.io docker-compose
+
 # Clone the repository
 git clone https://github.com/YasinCelik01/ReconMaster.git
 cd ReconMaster
@@ -56,11 +59,13 @@ python -m venv .venv
 source .venv/bin/activate  # On Windows: .venv\Scripts\activate
 
 # Install dependencies
+```
 pip install -r requirements.txt
 ```
 This method also requires you to install Go binaries that are used in the project.
 After installing and adding Go to path, you must run this command to install dependecies.
 
+```
 go install github.com/incogbyte/shosubgo@latest \
 && go install github.com/projectdiscovery/subfinder/v2/cmd/subfinder@latest \
 && go install github.com/projectdiscovery/katana/cmd/katana@latest \
@@ -68,7 +73,7 @@ go install github.com/incogbyte/shosubgo@latest \
 && go install github.com/s0md3v/smap/cmd/smap@latest \
 && go install -v github.com/projectdiscovery/httpx/cmd/httpx@latest \
 && go install -v github.com/projectdiscovery/wappalyzergo/cmd/update-fingerprints@latest
-
+```
 
 ## Configuration
 
